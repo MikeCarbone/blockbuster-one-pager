@@ -26,7 +26,7 @@ const AdSection = props => {
   if (props.imgRight) {
     return (
       <Section>
-        <Box backgroundColor="var(--black)" display="flex" justifyContent="space-between" alignItems="center" flexWrap="no-wrap">
+        <Box backgroundColor="var(--black)" display="flex" justifyContent="space-between" alignItems="center" flexWrap="no-wrap" flexDirection="var(--resp-flex-direction)">
           <Box backgroundColor="var(--black)" maxWidth="45%" margin="0 2rem 0 0" display="block" alignSelf="center" width="initial">
             <Heading size={2}>{props.title}</Heading>
             <Copy fontSize="var(--fontMed)" fontWeight="100" lineHeight="1.3">{props.copy}</Copy>
@@ -38,7 +38,7 @@ const AdSection = props => {
   } else {
     return (
       <Section>
-        <Box backgroundColor="var(--black)" display="flex" justifyContent="space-between" alignItems="center" flexWrap="no-wrap">
+        <Box backgroundColor="var(--black)" display="flex" justifyContent="space-between" alignItems="center" flexWrap="no-wrap" flexDirection="var(--resp-flex-direction)">
           <Image height="400px" width="40%" src={props.imgSrc} alt={props.imgAlt}  objectFit="contain"/>
           <Box backgroundColor="var(--black)" maxWidth="45%" margin="0 0 0 2rem" display="block" alignSelf="center" width="initial">
             <Heading size={2}>{props.title}</Heading>
@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Blockbuster Streaming -- Buy Now</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
       </Head>
